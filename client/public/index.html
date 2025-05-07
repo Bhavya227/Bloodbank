@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gujarat Blood Bank Management System</title>
+    <meta name="description" content="Blood bank management system for Gujarat - connecting donors and hospitals across the state.">
+    
+    <!-- Preload critical images -->
+    <link rel="preload" as="image" href="/gujarat-map.png">
+    <link rel="preload" as="image" href="/mission.jpg">
+    
+    <!-- Fallback images -->
+    <script>
+      // Preload fallback images in case local images fail to load
+      const preloadImage = (url) => {
+        const img = new Image();
+        img.src = url;
+      };
+      preloadImage("https://i.imgur.com/2Qftcta.png"); // Gujarat map fallback
+      preloadImage("https://i.imgur.com/K9Nph0f.jpg"); // Mission image fallback
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html> 
